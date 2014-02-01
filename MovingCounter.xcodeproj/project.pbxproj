@@ -21,6 +21,11 @@
 		5D4BC218189C172100677ABA /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D4BC1FA189C172000677ABA /* UIKit.framework */; };
 		5D4BC220189C172100677ABA /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5D4BC21E189C172100677ABA /* InfoPlist.strings */; };
 		5D4BC222189C172100677ABA /* MovingCounterTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D4BC221189C172100677ABA /* MovingCounterTests.m */; };
+		5D4BC22E189C178500677ABA /* MovingCounterView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D4BC22D189C178500677ABA /* MovingCounterView.m */; };
+		5D4BC231189C1BEA00677ABA /* CircleWithRightBar.png in Resources */ = {isa = PBXBuildFile; fileRef = 5D4BC22F189C1BEA00677ABA /* CircleWithRightBar.png */; };
+		5D4BC232189C1BEA00677ABA /* CircleWithRightBar@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5D4BC230189C1BEA00677ABA /* CircleWithRightBar@2x.png */; };
+		5DA7309B189C26B8007EDF89 /* RightBar.png in Resources */ = {isa = PBXBuildFile; fileRef = 5DA73099189C26B8007EDF89 /* RightBar.png */; };
+		5DA7309C189C26B8007EDF89 /* RightBar@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5DA7309A189C26B8007EDF89 /* RightBar@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +58,12 @@
 		5D4BC21D189C172100677ABA /* MovingCounterTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MovingCounterTests-Info.plist"; sourceTree = "<group>"; };
 		5D4BC21F189C172100677ABA /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		5D4BC221189C172100677ABA /* MovingCounterTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MovingCounterTests.m; sourceTree = "<group>"; };
+		5D4BC22C189C178500677ABA /* MovingCounterView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MovingCounterView.h; sourceTree = "<group>"; };
+		5D4BC22D189C178500677ABA /* MovingCounterView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MovingCounterView.m; sourceTree = "<group>"; };
+		5D4BC22F189C1BEA00677ABA /* CircleWithRightBar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = CircleWithRightBar.png; sourceTree = "<group>"; };
+		5D4BC230189C1BEA00677ABA /* CircleWithRightBar@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "CircleWithRightBar@2x.png"; sourceTree = "<group>"; };
+		5DA73099189C26B8007EDF89 /* RightBar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = RightBar.png; sourceTree = "<group>"; };
+		5DA7309A189C26B8007EDF89 /* RightBar@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "RightBar@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +123,7 @@
 		5D4BC1FC189C172100677ABA /* MovingCounter */ = {
 			isa = PBXGroup;
 			children = (
+				5D4BC22B189C176C00677ABA /* MovingCounterClasses */,
 				5D4BC205189C172100677ABA /* AppDelegate.h */,
 				5D4BC206189C172100677ABA /* AppDelegate.m */,
 				5D4BC208189C172100677ABA /* Main.storyboard */,
@@ -150,6 +162,19 @@
 				5D4BC21E189C172100677ABA /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		5D4BC22B189C176C00677ABA /* MovingCounterClasses */ = {
+			isa = PBXGroup;
+			children = (
+				5DA73099189C26B8007EDF89 /* RightBar.png */,
+				5DA7309A189C26B8007EDF89 /* RightBar@2x.png */,
+				5D4BC22F189C1BEA00677ABA /* CircleWithRightBar.png */,
+				5D4BC230189C1BEA00677ABA /* CircleWithRightBar@2x.png */,
+				5D4BC22C189C178500677ABA /* MovingCounterView.h */,
+				5D4BC22D189C178500677ABA /* MovingCounterView.m */,
+			);
+			path = MovingCounterClasses;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -228,8 +253,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5D4BC232189C1BEA00677ABA /* CircleWithRightBar@2x.png in Resources */,
 				5D4BC20F189C172100677ABA /* Images.xcassets in Resources */,
+				5DA7309C189C26B8007EDF89 /* RightBar@2x.png in Resources */,
+				5DA7309B189C26B8007EDF89 /* RightBar.png in Resources */,
 				5D4BC201189C172100677ABA /* InfoPlist.strings in Resources */,
+				5D4BC231189C1BEA00677ABA /* CircleWithRightBar.png in Resources */,
 				5D4BC20A189C172100677ABA /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -250,6 +279,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5D4BC20D189C172100677ABA /* ViewController.m in Sources */,
+				5D4BC22E189C178500677ABA /* MovingCounterView.m in Sources */,
 				5D4BC207189C172100677ABA /* AppDelegate.m in Sources */,
 				5D4BC203189C172100677ABA /* main.m in Sources */,
 			);
@@ -460,6 +490,7 @@
 				5D4BC227189C172100677ABA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		5D4BC228189C172100677ABA /* Build configuration list for PBXNativeTarget "MovingCounterTests" */ = {
 			isa = XCConfigurationList;
@@ -468,6 +499,7 @@
 				5D4BC22A189C172100677ABA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

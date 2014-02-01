@@ -1,18 +1,56 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4451" systemVersion="13A461" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4514" systemVersion="13B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="vXZ-lx-hvc">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3676"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3747"/>
     </dependencies>
     <scenes>
-        <!--class Prefix:identifier View Controller-->
+        <!--View Controller-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
                 <viewController id="vXZ-lx-hvc" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="maq-aQ-9Hq"/>
+                        <viewControllerLayoutGuide type="bottom" id="qYC-VS-v3f"/>
+                    </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Xj1-JU-Gc1" customClass="MovingCounterView">
+                                <rect key="frame" x="20" y="98" width="25" height="450"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="25" id="KBF-f0-xDb"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MAT-dN-C8K">
+                                <rect key="frame" x="210" y="512" width="90" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="KVF-Fz-xBT"/>
+                                    <constraint firstAttribute="width" constant="90" id="LQm-SQ-C1I"/>
+                                </constraints>
+                                <state key="normal" title="Start">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="startAnimation:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="Abz-8k-sas"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Xj1-JU-Gc1" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="20" id="4QI-Sq-LsF"/>
+                            <constraint firstItem="Xj1-JU-Gc1" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="top" constant="98" id="9QV-kt-4NB"/>
+                            <constraint firstAttribute="bottom" secondItem="Xj1-JU-Gc1" secondAttribute="bottom" constant="20" id="cD3-FZ-JCH"/>
+                            <constraint firstAttribute="trailing" secondItem="MAT-dN-C8K" secondAttribute="trailing" constant="20" id="tqH-0O-I6n"/>
+                            <constraint firstAttribute="bottom" secondItem="MAT-dN-C8K" secondAttribute="bottom" constant="26" id="wxo-Gv-hhp"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="mcView" destination="Xj1-JU-Gc1" id="VIa-I2-oLU"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>

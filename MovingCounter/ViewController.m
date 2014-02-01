@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "MovingCounterView.h"
 
 @interface ViewController ()
 
@@ -24,6 +25,14 @@
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+- (IBAction)startAnimation:(id)sender
+{
+    CGFloat yPosition = CGRectGetHeight(self.mcView.bounds) - 20.f;
+    self.mcView.targetCount = 200;
+    
+    [self.mcView startMarkerAnimationToYPosition:yPosition duration:4];
 }
 
 @end

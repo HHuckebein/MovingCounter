@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+@class MovingCounterView;
 
+@interface ViewController : UIViewController
+@property (nonatomic, weak) IBOutlet MovingCounterView *mcView;
 @end
