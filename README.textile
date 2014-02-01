@@ -1,0 +1,12 @@
+!https://dl.dropboxusercontent.com/u/9611843/HorizontalPickerView_ShowCase.png!
+
+h2. MovingCounter
+
+The MovingCounter project demonstrates how a position with a value value 
+animation can be combined.
+
+<p>See it in action on <a href="http://youtu.be/3lm8gQpxMOk">Youtube</a>.</p>
+
+h3. License
+
+Usage is provided under the [MIT licence](http://http://opensource.org/licenses/MIT). See LICENCE for the full details.

@@ -26,6 +26,8 @@
 		5D4BC232189C1BEA00677ABA /* CircleWithRightBar@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5D4BC230189C1BEA00677ABA /* CircleWithRightBar@2x.png */; };
 		5DA7309B189C26B8007EDF89 /* RightBar.png in Resources */ = {isa = PBXBuildFile; fileRef = 5DA73099189C26B8007EDF89 /* RightBar.png */; };
 		5DA7309C189C26B8007EDF89 /* RightBar@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5DA7309A189C26B8007EDF89 /* RightBar@2x.png */; };
+		5DF8D22D189D42CB00854BA7 /* LICENSE.txt in Resources */ = {isa = PBXBuildFile; fileRef = 5DF8D22B189D42CB00854BA7 /* LICENSE.txt */; };
+		5DF8D22E189D42CB00854BA7 /* README.textile in Resources */ = {isa = PBXBuildFile; fileRef = 5DF8D22C189D42CB00854BA7 /* README.textile */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,6 +66,8 @@
 		5D4BC230189C1BEA00677ABA /* CircleWithRightBar@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "CircleWithRightBar@2x.png"; sourceTree = "<group>"; };
 		5DA73099189C26B8007EDF89 /* RightBar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = RightBar.png; sourceTree = "<group>"; };
 		5DA7309A189C26B8007EDF89 /* RightBar@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "RightBar@2x.png"; sourceTree = "<group>"; };
+		5DF8D22B189D42CB00854BA7 /* LICENSE.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE.txt; sourceTree = "<group>"; };
+		5DF8D22C189D42CB00854BA7 /* README.textile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.textile; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,6 +97,8 @@
 		5D4BC1EA189C172000677ABA = {
 			isa = PBXGroup;
 			children = (
+				5DF8D22B189D42CB00854BA7 /* LICENSE.txt */,
+				5DF8D22C189D42CB00854BA7 /* README.textile */,
 				5D4BC1FC189C172100677ABA /* MovingCounter */,
 				5D4BC21B189C172100677ABA /* MovingCounterTests */,
 				5D4BC1F5189C172000677ABA /* Frameworks */,
@@ -257,6 +263,8 @@
 				5D4BC20F189C172100677ABA /* Images.xcassets in Resources */,
 				5DA7309C189C26B8007EDF89 /* RightBar@2x.png in Resources */,
 				5DA7309B189C26B8007EDF89 /* RightBar.png in Resources */,
+				5DF8D22E189D42CB00854BA7 /* README.textile in Resources */,
+				5DF8D22D189D42CB00854BA7 /* LICENSE.txt in Resources */,
 				5D4BC201189C172100677ABA /* InfoPlist.strings in Resources */,
 				5D4BC231189C1BEA00677ABA /* CircleWithRightBar.png in Resources */,
 				5D4BC20A189C172100677ABA /* Main.storyboard in Resources */,
