@@ -1,5 +1,3 @@
-!https://dl.dropboxusercontent.com/u/9611843/HorizontalPickerView_ShowCase.png!
-
 h2. MovingCounter
 
 The MovingCounter project demonstrates how a position with a value value 
