@@ -15,16 +15,16 @@
 #define COUNT_KEY               @"count"
 
 @interface CountingLayer : CALayer
-@property (nonatomic, assign) NSInteger count;
+@property (nonatomic) NSInteger count;
 @end
 
 @interface MovingCounterView()
-@property (nonatomic, strong) CountingLayer         *markerLayer;
-@property (nonatomic, strong) CAShapeLayer          *rightSideLayer;
-@property (nonatomic, strong) CATextLayer           *infoTextLayer;
-@property (nonatomic, strong) NSDictionary          *infoTextStyleAttributes;
-@property (nonatomic, strong) CAMediaTimingFunction *timingFunction;
-@property (nonatomic, strong) NSString              *displayFormatString;
+@property (nonatomic) CountingLayer         *markerLayer;
+@property (nonatomic) CALayer               *rightSideLayer;
+@property (nonatomic) CATextLayer           *infoTextLayer;
+@property (nonatomic) NSDictionary          *infoTextStyleAttributes;
+@property (nonatomic) CAMediaTimingFunction *timingFunction;
+@property (nonatomic) NSString              *displayFormatString;
 @end
 
 @implementation MovingCounterView
